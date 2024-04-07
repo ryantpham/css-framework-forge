@@ -1,0 +1,18 @@
+.container{
+    width: 500px;
+    height: 500px;
+    padding: 8px;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square{
+    width:16%;
+    height:16%;
+    background-color: yellowgreen;
+    border: solid black 1px;
+}
+
+.square:hover{
+    background-color: red;
+}

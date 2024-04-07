@@ -1,8 +1,12 @@
 const container = document.querySelector('.container')
 
-const box = document.createElement('div')
-box.style.width = '50px';
-box.style.height = '50px';
-box.style.backgroundColor = 'red';
+for(i = 0; i<256; i++){
+    const square = document.createElement('div')
+    square.classList.add('square')
+    container.appendChild(square);
+    square.addEventListener('mouseover',()=>{
+        square.style.backgroundColor = 'red';
+    });
+}
 
-container.appendChild(box);
+
